@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор</title>
+</head>
+<body>
+	<script>
+		var x = prompt('введите первое число');
+		var z = prompt('сделайте действие + - * /');
+		var y = prompt('введите другое число');
+
+		var x = parseFloat(x);
+		var y = parseFloat(y);
+
+		var result;
+
+		switch(z){
+			case('+'): result = x + y;
+			break;
+			case('-'): result = x - y;
+			break;
+			case('*'): result = x * y;
+			break;
+			case('/'): result = x / y;
+			break;
+			default: result = 'Неверное действие';
+		}
+		alert('Результат ' + x + ' ' + z + ' ' + y + ' = ' + result);
+		location.reload();
+	</script>
+</body>
+</html>
